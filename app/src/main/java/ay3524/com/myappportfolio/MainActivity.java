@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     @Override
@@ -29,26 +29,9 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-        int id = v.getId();
-        switch (id){
-            case R.id.button1:
-                Toast.makeText(this, "This button will launch my media streamer app", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button2:
-                Toast.makeText(this, "This button will launch my scores app", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button3:
-                Toast.makeText(this, "This button will launch my Gradle project app", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button4:
-                Toast.makeText(this, "This button will launch my build it bigger app", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button5:
-                Toast.makeText(this, "This button will launch my xyz reading app", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button6:
-                Toast.makeText(this, "This button will launch my capstone app", Toast.LENGTH_SHORT).show();
-                break;
-        }
+        Button button = (Button) v;
+        String appName = button.getText().toString();
+        String toastText = "This button will launch " + appName;
+        Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show();
     }
 }

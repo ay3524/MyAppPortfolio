@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.2"
     defaultConfig {
         applicationId "ay3524.com.myappportfolio"
-        minSdkVersion 19
+        minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"

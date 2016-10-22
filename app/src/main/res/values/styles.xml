@@ -8,4 +8,24 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CustomButtonStyleRed" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_marginTop">@dimen/relative_margin_top</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/buttonred</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CustomButtonStyleOrange" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_marginTop">@dimen/relative_margin_top</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@color/buttonorange</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
 </resources>
