@@ -4,7 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ay3524.com.myappportfolio.MainActivity">
+    tools:context="ay3524.com.myappportfolio.MainActivity"
+    android:background="@color/background">
 
     <RelativeLayout
         android:id="@+id/relative"
@@ -18,7 +19,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/text_margin_top"
             android:text="@string/my_nanodegree_apps"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textSize="@dimen/text_size" />
 
         <RelativeLayout
@@ -32,31 +33,31 @@
             <Button
                 android:id="@+id/button1"
                 style="@style/CustomButtonStyleOrange"
-                android:text="@string/spotify_streamer" />
+                android:text="@string/popular_movies" />
 
             <Button
                 android:id="@+id/button2"
                 style="@style/CustomButtonStyleOrange"
                 android:layout_below="@+id/button1"
-                android:text="@string/scores_app" />
+                android:text="@string/stock_hawk" />
 
             <Button
                 android:id="@+id/button3"
                 style="@style/CustomButtonStyleOrange"
                 android:layout_below="@+id/button2"
-                android:text="@string/library_app" />
+                android:text="@string/build_it_bigger" />
 
             <Button
                 android:id="@+id/button4"
                 style="@style/CustomButtonStyleOrange"
                 android:layout_below="@+id/button3"
-                android:text="@string/build_it_bigger" />
+                android:text="@string/make_your_app_material" />
 
             <Button
                 android:id="@+id/button5"
                 style="@style/CustomButtonStyleOrange"
                 android:layout_below="@+id/button4"
-                android:text="@string/xyz_reader" />
+                android:text="@string/go_ubiquitous" />
 
             <Button
                 android:id="@+id/button6"

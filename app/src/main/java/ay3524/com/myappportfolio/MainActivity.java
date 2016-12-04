@@ -9,6 +9,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
+    public static final String buttonLaunchString = "This button will launch ";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         Button button = (Button) v;
         String appName = button.getText().toString();
-        String toastText = "This button will launch " + appName;
+        String toastText =  buttonLaunchString.concat(appName);
         Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show();
     }
 }
